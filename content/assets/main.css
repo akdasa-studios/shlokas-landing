@@ -1,0 +1,214 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("poppins-light.ttf");
+}
+
+body {
+    /* font-size: large; */
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    /* background-color: #F1FAEE; */
+    font-family: "Poppins";
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 450;
+    color: #000;
+    letter-spacing: -0.3rem;
+    line-height: 0.8;
+    width: 100%;
+    text-align: left;
+    margin: 1.2rem 0;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #474b4c;
+    line-height: 1.5;
+    text-align: left;
+    font-weight: 340;
+    /* margin: 3.6rem 0 3.5rem 0; */
+}
+
+p b {
+    font-weight: 500;
+}
+
+.logo {
+    height: 70px;
+    margin: 32px 0px;
+    /* position: absolute;
+    left: 135px;
+    top: 75px; */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 100%;
+    margin: 50;
+    border-radius: 3rem;
+    border: 1px #f1f7fb;
+    background: #f1f7fb;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.first {
+    flex-direction: column;
+    flex-basis: 50%;
+    margin: 5rem;
+    align-items:flex-start;
+}
+
+.second {
+    flex-basis: 50%;
+    margin: 5rem;
+}
+
+.button {
+    height: 28px;
+    margin: 10px;
+}
+
+.disabled {
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 15px;
+}
+
+.figure {
+    display: block;
+    margin: 0px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: rgba(2, 8, 20, 0.2) 0px 4px 16px, rgba(2, 8, 20, 0.16) 0px 16px 32px;
+    width: 387px;
+    height: 824px;
+    overflow: hidden;
+    z-index: 1;
+    transform: scale(1);
+    filter: grayscale(0%);
+    background-color: black;
+    border-radius: 48px;
+}
+
+.notch {
+    box-sizing: border-box;
+    display: block;
+    fill: rgb(9, 10, 13);
+    left: 50%;
+    position: absolute;
+    top: 12px;
+    transform: translateX(-50%);
+    width: 165px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+iframe {
+    top: 0px;
+    left: 0px;
+    margin: 12px;
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
+    border: none;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 38px;
+}
+
+.lang {
+    font-size: x-large;
+    /* cursor: pointer; */
+    user-select: none;
+}
+
+.debug {
+    background-color: gainsboro;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.bch {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 45rem;
+    height: 45rem;
+    border-radius: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-45%);
+    transform: translateY(-45%);
+    background: #9341d4;
+    background: linear-gradient(45deg, #9341d4 0%, #d98efb 50%, #9341d4 100%);
+    background-size: 200% 200%;
+    background-position: left bottom;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    filter: drop-shadow(0px 30px 20px rgba(147,65,212,0.4));
+    -webkit-filter: drop-shadow(0px 30px 20px rgba(147,65,212,0.4));
+    -moz-filter: drop-shadow(0px 30px 20px rgba(147,65,212,0.4));
+    /* -webkit-animation-name: animateGradient; */
+    /* animation-name: animateGradient; */
+    /* -webkit-animation-duration: 2.5s; */
+    /* animation-duration: 2.5s; */
+    /* -webkit-animation-iteration-count: infinite; */
+    /* animation-iteration-count: infinite; */
+}
+
+.store-button {
+    display: inline-flex;
+    text-decoration: none !important;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 5rem;
+    border-radius: 5rem;
+    background: linear-gradient(0deg, #f2026b 0%, #ff8aaf 100%);
+    filter: drop-shadow(0px 10px 10px rgba(245,69,144,0.4));
+    margin: 0.5rem;
+}
+
+.store-button.apple {
+    background: linear-gradient(0deg, #1369ec 0%, #65bef4 100%);
+    filter: drop-shadow(0px 10px 10px rgba(33,120,237,0.4));
+}
+
+.get-it {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    color: white;
+    line-height: 1.3;
+    /* font-weight: 900; */
+}
+
+.get-it > span {
+    display: block;
+    font-size: 1.2rem;
+    color: white;
+}

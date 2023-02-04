@@ -1,1 +1,1 @@
-# shlokas-landing
+# Landing page for Shlokas app
