@@ -1,3 +1,4 @@
+name: 'shlokas'
 version: "3.9"
 
 services:
@@ -6,3 +7,8 @@ services:
     restart: always
     ports:
       - 80:80
+
+
+networks:
+  shlokas:
+    name: shlokas
